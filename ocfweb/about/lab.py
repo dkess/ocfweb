@@ -9,3 +9,12 @@ def lab_open_source(request):
             'title': 'Open Source in our Computer Lab',
         },
     )
+
+def lab_survey(request):
+    return render(
+        request,
+        'about/survey.html',
+        {
+            'title': 'Survey',
+        },
+    )

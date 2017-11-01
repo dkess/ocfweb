@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse
 from django.http import HttpResponse
 from django.shortcuts import redirect
 
-from ocfweb.about.lab import lab_open_source
+from ocfweb.about.lab import lab_open_source, lab_survey
 from ocfweb.about.staff import about_staff
 from ocfweb.account.urls import urlpatterns as account
 from ocfweb.announcements.urls import urlpatterns as announcements
@@ -42,6 +42,7 @@ urlpatterns = [
     # about pages
     url(r'^about/staff$', about_staff, name='about-staff'),
     url(r'^about/lab/open-source$', lab_open_source, name='lab-open-source'),
+    url(r'^about/lab/survey$', lab_survey, name='lab-survey'),
 
     # tv endpoints
     url(r'^tv/', include(tv)),

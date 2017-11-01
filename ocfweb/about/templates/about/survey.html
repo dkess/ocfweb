@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block hero %}{% endblock %}
+{% block container %}
+    <div class="container ocf-lab-content">
+        <div class="row lab-intro">
+            <h3>We want to hear from you!</h3>
+            <p class="intro">Take our survey and get 50 pages added to your semester's quota!</p>
+            <p class="learnmore">
+            <a href="{% url 'about-staff' %}" class="btn btn-large">ocf.io/survey</a>
+            </p>
+        </div>
+    </div>
+{% endblock %}
